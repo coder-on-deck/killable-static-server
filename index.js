@@ -3,7 +3,7 @@ const history = require('connect-history-api-fallback')
 let argv = require('minimist')(process.argv.slice(2))
 const connectStatic = require('connect-static')
 argv = Object.assign({port: 9090, dir: 'dist', killUrl: '/killme'}, argv)
-
+process.title = 'killable-static-server'
 const connect = require('connect')
 const http = require('http')
 const app = connect()
