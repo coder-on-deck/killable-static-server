@@ -29,6 +29,18 @@ OR
 killall killable-static-server
 ```
 
+# Easily use with protractor
+
+Just add this to your protractor configuration file
+
+```
+beforeLaunch: ()=>{
+   require('killable-static-server')
+ }
+```
+
+This will run and kill your server on each run
+
 # Options
 
  - **verbose** - to see verbose prints. default: false
