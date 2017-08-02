@@ -5,7 +5,7 @@ const assert = require('assert')
 
 function runServer () {
   var spawn = require('child_process').spawn
-  spawn('node', ['index.js'], {
+  spawn('node', ['index.js', '--root', 'dist'], {
     detached: true
   })
 }
